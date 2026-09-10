@@ -96,6 +96,7 @@ export const api = {
   recordConsent: (visitId: string, data: { consent_type: string; accepted: boolean }) => api.post(`/api/visits/${visitId}/consent`, data),
   sendChatMessage: (visitId: string, message: string, language: string) => 
     api.post<{ message: { id: string; speaker: string; message: string; language: string } }>('/api/ai/chat', { visit_id: visitId, message, language }),
+  uploadDocument: (formData: FormData) => api.upload<{ document: { id: string; r2_key: string; filename: string } }>('/api/documents/upload', formData),
 };
 
 export default api;

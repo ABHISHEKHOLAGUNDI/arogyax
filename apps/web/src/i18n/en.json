@@ -93,7 +93,13 @@
     "analyzing": "Analyzing document...",
     "analyzed": "Document analyzed",
     "noDocuments": "No documents uploaded yet",
-    "skip": "Skip — I don't have documents"
+    "skip": "Skip — I don't have documents",
+    "dragDrop": "Drag & Drop or Click to Upload",
+    "supportedFiles": "Supported: PDF, JPG, PNG",
+    "pendingFiles": "Ready to Upload",
+    "uploadBtn": "Upload Files",
+    "uploadedSuccessfully": "Uploaded Successfully",
+    "skipBtn": "Skip Document Upload"
   },
   "review": {
     "title": "Review Your Information",
