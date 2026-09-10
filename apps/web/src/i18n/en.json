@@ -1,0 +1,143 @@
+{
+  "app": {
+    "name": "ArogyaX",
+    "tagline": "AI-Powered Patient Case-Taking"
+  },
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "help": "Help",
+    "close": "Close",
+    "required": "Required"
+  },
+  "welcome": {
+    "title": "Welcome to ArogyaX",
+    "subtitle": "AI-assisted patient intake for your visit",
+    "startVisit": "Start New Visit",
+    "description": "This system will help collect your medical information before your consultation with the doctor.",
+    "demoMode": "Demo Mode",
+    "poweredBy": "Powered by AI • Ministry of Ayush"
+  },
+  "language": {
+    "title": "Select Your Language",
+    "subtitle": "Choose the language you are most comfortable with",
+    "selected": "Selected"
+  },
+  "consent": {
+    "title": "Your Privacy Matters",
+    "subtitle": "Please read and accept before proceeding",
+    "dataCollection": "Data Collection Consent",
+    "dataCollectionText": "Your information will be used to prepare your case for review by healthcare professionals at this facility.",
+    "aiProcessing": "AI Processing Consent",
+    "aiProcessingText": "An AI system will help organize your information. A doctor will always review and verify all information before making any clinical decisions.",
+    "documentAnalysis": "Document Analysis Consent",
+    "documentAnalysisText": "If you upload medical documents, AI will help extract information from them. The doctor will verify all extracted information.",
+    "important": "Important",
+    "importantText": "This system does NOT diagnose diseases or prescribe medications. It only helps collect and organize your information for the doctor.",
+    "acceptAll": "I Understand & Accept All",
+    "mustAccept": "You must accept the consent to continue"
+  },
+  "patient": {
+    "title": "Your Details",
+    "subtitle": "Please enter your basic information",
+    "name": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "age": "Age",
+    "agePlaceholder": "Your age",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "phone": "Phone Number",
+    "phonePlaceholder": "10-digit phone number",
+    "abhaId": "ABHA ID (Optional)",
+    "abhaIdPlaceholder": "14-digit ABHA number"
+  },
+  "complaint": {
+    "title": "What brings you here today?",
+    "subtitle": "Describe your main health concern",
+    "placeholder": "Describe your symptoms or health concern...",
+    "voiceHint": "Tap the microphone to speak your answer",
+    "examples": "Examples: headache for 2 days, stomach pain after eating, joint pain in knees",
+    "speakButton": "Speak",
+    "listenButton": "Listen",
+    "minLength": "Please describe your concern in at least a few words"
+  },
+  "interview": {
+    "title": "Health Questions",
+    "subtitle": "The AI assistant will ask you relevant questions",
+    "thinking": "Preparing next question...",
+    "typeHere": "Type your answer here...",
+    "send": "Send",
+    "skip": "Skip this question",
+    "complete": "I've answered all I can",
+    "voiceInput": "Speak your answer"
+  },
+  "documents": {
+    "title": "Medical Documents",
+    "subtitle": "Upload any existing prescriptions, reports, or records",
+    "upload": "Upload Document",
+    "takePhoto": "Take Photo",
+    "supported": "Supported: PDF, JPG, PNG (max 10MB)",
+    "analyzing": "Analyzing document...",
+    "analyzed": "Document analyzed",
+    "noDocuments": "No documents uploaded yet",
+    "skip": "Skip — I don't have documents"
+  },
+  "review": {
+    "title": "Review Your Information",
+    "subtitle": "Please check that everything is correct",
+    "editSection": "Edit",
+    "looksGood": "Everything Looks Correct",
+    "submitCase": "Submit to Doctor"
+  },
+  "success": {
+    "title": "Thank You!",
+    "subtitle": "Your information has been submitted",
+    "tokenLabel": "Your Token Number",
+    "waitMessage": "Please wait in the waiting area. You will be called when the doctor is ready.",
+    "newVisit": "Start New Visit",
+    "estimatedWait": "Estimated wait"
+  },
+  "progress": {
+    "welcome": "Welcome",
+    "language": "Language",
+    "consent": "Consent",
+    "details": "Details",
+    "complaint": "Complaint",
+    "interview": "Interview",
+    "history": "History",
+    "ayurvedic": "Ayurvedic",
+    "documents": "Documents",
+    "review": "Review",
+    "submit": "Submit",
+    "complete": "Done"
+  },
+  "voice": {
+    "listening": "Listening...",
+    "processing": "Processing...",
+    "tapToSpeak": "Tap to speak",
+    "speakNow": "Speak now",
+    "notSupported": "Voice input is not supported on this device"
+  },
+  "errors": {
+    "nameRequired": "Please enter your name",
+    "ageRequired": "Please enter a valid age",
+    "genderRequired": "Please select your gender",
+    "phoneRequired": "Please enter a valid 10-digit phone number",
+    "complaintRequired": "Please describe your health concern",
+    "networkError": "Connection lost. Your data is saved locally.",
+    "retryMessage": "Will retry when connection returns."
+  }
+}

@@ -5,6 +5,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
+import PatientIntake from './pages/PatientIntake';
 
 /**
  * Root application component with routing.
@@ -16,7 +17,7 @@ function App() {
       <Route path="/" element={<Home />} />
 
       {/* Phase 3+: Patient intake flow */}
-      {/* <Route path="/patient/*" element={<PatientIntake />} /> */}
+      <Route path="/patient/*" element={<PatientIntake />} />
 
       {/* Phase 9+: Doctor dashboard */}
       {/* <Route path="/doctor/*" element={<DoctorDashboard />} /> */}
