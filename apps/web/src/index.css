@@ -1,0 +1,174 @@
+/* ============================================
+   ArogyaX — Global Styles & Design System
+   ============================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- CSS Custom Properties --- */
+:root {
+  --color-primary: #0d9e9e;
+  --color-primary-light: #4dcaca;
+  --color-primary-dark: #085f5f;
+  --color-accent: #e88a00;
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --color-text-secondary: #64748b;
+  --color-border: #e2e8f0;
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+/* --- Base Resets --- */
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+/* --- Reusable Component Classes --- */
+@layer components {
+  /* Large touch-friendly button for patient kiosk */
+  .btn-kiosk {
+    @apply flex items-center justify-center gap-3
+           px-8 py-5 rounded-2xl
+           text-lg font-semibold
+           transition-all duration-200 ease-out
+           active:scale-[0.97]
+           disabled:opacity-50 disabled:cursor-not-allowed
+           focus:outline-none focus:ring-4 focus:ring-primary-200;
+  }
+
+  .btn-kiosk-primary {
+    @apply btn-kiosk bg-primary-500 text-white
+           hover:bg-primary-600
+           shadow-elevated hover:shadow-glow;
+  }
+
+  .btn-kiosk-secondary {
+    @apply btn-kiosk bg-white text-primary-700 border-2 border-primary-200
+           hover:bg-primary-50 hover:border-primary-300;
+  }
+
+  .btn-kiosk-danger {
+    @apply btn-kiosk bg-danger text-white
+           hover:bg-red-700;
+  }
+
+  /* Standard buttons for doctor dashboard */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2
+           px-4 py-2.5 rounded-lg
+           text-sm font-medium
+           transition-all duration-150
+           disabled:opacity-50 disabled:cursor-not-allowed
+           focus:outline-none focus:ring-2 focus:ring-offset-1;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-white
+           hover:bg-primary-600
+           focus:ring-primary-300;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-surface-600
+           hover:bg-surface-100
+           focus:ring-surface-300;
+  }
+
+  .btn-outline {
+    @apply btn bg-white text-primary-600 border border-primary-300
+           hover:bg-primary-50
+           focus:ring-primary-200;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl border border-surface-200 shadow-card
+           transition-shadow duration-200;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-elevated hover:border-primary-200;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full
+           text-xs font-semibold;
+  }
+
+  .badge-success {
+    @apply badge bg-green-50 text-green-700 border border-green-200;
+  }
+
+  .badge-warning {
+    @apply badge bg-amber-50 text-amber-700 border border-amber-200;
+  }
+
+  .badge-danger {
+    @apply badge bg-red-50 text-red-700 border border-red-200;
+  }
+
+  .badge-info {
+    @apply badge bg-blue-50 text-blue-700 border border-blue-200;
+  }
+
+  /* Input fields */
+  .input {
+    @apply w-full px-4 py-3 rounded-lg
+           border border-surface-300
+           text-surface-900 placeholder-surface-400
+           transition-colors duration-150
+           focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-primary-400;
+  }
+
+  .input-lg {
+    @apply input text-lg py-4;
+  }
+}
+
+/* --- Utility Animations --- */
+@layer utilities {
+  .animate-in {
+    animation: fadeIn 0.3s ease-out, slideUp 0.4s ease-out;
+  }
+}

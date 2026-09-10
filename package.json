@@ -1,0 +1,36 @@
+{
+  "name": "arogyax",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ArogyaX — AI-Powered Multilingual Patient Case-Taking Software for SIH 26047",
+  "workspaces": [
+    "packages/shared",
+    "apps/worker",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:worker": "npm run dev --workspace=apps/worker",
+    "build:web": "npm run build --workspace=apps/web",
+    "build:worker": "npm run build --workspace=apps/worker",
+    "build": "npm run build:web && npm run build:worker",
+    "lint": "echo \"TODO: add linting\"",
+    "test": "echo \"TODO: add tests\"",
+    "clean": "rimraf apps/web/dist apps/worker/dist node_modules"
+  },
+  "keywords": [
+    "arogyax",
+    "ayush",
+    "healthcare",
+    "ai",
+    "multilingual",
+    "patient-intake",
+    "sih"
+  ],
+  "license": "MIT",
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "esbuild@0.17.19": true,
+    "workerd@1.20250718.0": true
+  }
+}

@@ -1,0 +1,37 @@
+# ============================================
+# ArogyaX — Cloudflare Worker Configuration
+# ============================================
+
+name = "arogyax-worker"
+main = "apps/worker/src/index.ts"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# --- Development ---
+[dev]
+port = 8787
+
+# --- Environment Variables ---
+[vars]
+APP_ENV = "production"
+OPENAI_MODEL = "gpt-4o-mini"
+OPENAI_TRANSCRIPTION_MODEL = "whisper-1"
+
+# --- D1 Database ---
+# After running: npx wrangler d1 create arogyax-db
+# Replace the database_id below with the actual ID
+[[d1_databases]]
+binding = "DB"
+database_name = "arogyax-db"
+database_id = "REPLACE_WITH_ACTUAL_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+# --- R2 Bucket ---
+# After running: npx wrangler r2 bucket create arogyax-documents
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "arogyax-documents"
+
+# --- Secrets (set via wrangler secret put) ---
+# OPENAI_API_KEY
+# JWT_SECRET

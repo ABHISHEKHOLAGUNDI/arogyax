@@ -1,0 +1,21 @@
+{
+  "name": "@arogyax/worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --config ../../wrangler.toml",
+    "deploy": "wrangler deploy --config ../../wrangler.toml",
+    "tail": "wrangler tail --config ../../wrangler.toml"
+  },
+  "dependencies": {
+    "hono": "^4.6.0",
+    "zod": "^3.23.8",
+    "@arogyax/shared": "*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241106.0",
+    "wrangler": "^3.91.0",
+    "typescript": "^5.6.0"
+  }
+}
