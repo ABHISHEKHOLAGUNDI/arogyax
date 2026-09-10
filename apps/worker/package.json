@@ -9,13 +9,14 @@
     "tail": "wrangler tail --config ../../wrangler.toml"
   },
   "dependencies": {
+    "@arogyax/shared": "*",
     "hono": "^4.6.0",
-    "zod": "^3.23.8",
-    "@arogyax/shared": "*"
+    "openai": "^7.13.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241106.0",
-    "wrangler": "^3.91.0",
-    "typescript": "^5.6.0"
+    "typescript": "^5.6.0",
+    "wrangler": "^3.91.0"
   }
 }

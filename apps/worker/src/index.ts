@@ -15,6 +15,7 @@ import patientsRoute from './routes/patients.js';
 import visitsRoute from './routes/visits.js';
 import doctorRoute from './routes/doctor.js';
 import adminRoute from './routes/admin.js';
+import aiRoute from './routes/ai.js';
 
 // --- Create Hono App ---
 const app = new Hono<{ Bindings: Env }>();
@@ -30,6 +31,7 @@ app.route('/api/patients', patientsRoute);
 app.route('/api/visits', visitsRoute);
 app.route('/api/doctor', doctorRoute);
 app.route('/api/admin', adminRoute);
+app.route('/api/ai', aiRoute);
 
 // --- Root ---
 app.get('/', (c) => {
@@ -44,6 +46,7 @@ app.get('/', (c) => {
       visits: '/api/visits',
       doctor: '/api/doctor/queue',
       admin: '/api/admin/stats',
+      ai: '/api/ai/chat'
     },
   });
 });

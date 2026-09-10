@@ -94,6 +94,8 @@ export const api = {
   createPatient: (data: any) => api.post<{ id: string }>('/api/patients', data),
   createVisit: (patientId: string) => api.post<{ id: string; token_number: number }>('/api/visits', { patient_id: patientId }),
   recordConsent: (visitId: string, data: { consent_type: string; accepted: boolean }) => api.post(`/api/visits/${visitId}/consent`, data),
+  sendChatMessage: (visitId: string, message: string, language: string) => 
+    api.post<{ message: { id: string; speaker: string; message: string; language: string } }>('/api/ai/chat', { visit_id: visitId, message, language }),
 };
 
 export default api;

@@ -9,8 +9,8 @@ import { LanguageSelect } from '../components/patient/LanguageSelect';
 import { ConsentScreen } from '../components/patient/ConsentScreen';
 import { PatientForm } from '../components/patient/PatientForm';
 import { ChiefComplaint } from '../components/patient/ChiefComplaint';
+import { AIInterview } from '../components/patient/AIInterview';
 import { 
-  AIInterviewPlaceholder, 
   DocumentUploadPlaceholder, 
   ReviewPlaceholder, 
   SuccessPlaceholder 
@@ -32,7 +32,7 @@ function IntakeOrchestrator() {
       case 'chief-complaint':
         return <ChiefComplaint />;
       case 'ai-interview':
-        return <AIInterviewPlaceholder />;
+        return <AIInterview />;
       case 'document-upload':
         return <DocumentUploadPlaceholder />;
       case 'review':
